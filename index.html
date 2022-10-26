@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Studio Ghibli Movies Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Studio Ghibli Survey Form</h1>
+    <p id="description">Please fill out this survey form and share with us your love for Studio Ghibli films</p>
+    <form action="/action_studio-ghibli.php" id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Enter your name: <input id="name" name="name" type="text" placeholder="Hayao" required></label>
+          <label for="email" id="email-label">Enter your email: <input id="email" name="email" type="email" placeholder="ghibli@studio.com" required></label>
+          <label for="age">Enter your age(years): <input id="age" name="age" type="text"  min="6" max="120" placeholder="18"></label>
+        </fieldset>
+        <fieldset>
+          <label for="number" id="number-label">How many Studio Ghibli films have you watched? <input id="number" name="number" type="number" min="0" max="23" placeholder="22"></label>
+          <label for="favourite-film">What is your Studio Ghibli favourite film?
+            <select id="dropdown" name="favourite-film">
+              <option value="">(select one)</option>
+              <option value="1">Nausicaä of the Valley of the Wind</option>
+              <option value="2">Castle in the Sky</option>
+              <option value="3">Grave of the Fireflies</option>
+              <option value="4">My Neighbor Totoro</option>
+              <option value="5">Kiki’s Delivery Service </option>
+              <option value="6">Only Yesterday</option>
+              <option value="7">Porco Rosso</option>
+              <option value="8">Ocean Waves</option>
+              <option value="9">Pom Poko</option>
+              <option value="10">Whisper of the Heart</option>
+              <option value="11">Princess Mononoke</option>
+              <option value="12">My Neighbors the Yamadas</option>
+              <option value="13">Spirited Away</option>
+              <option value="14">The Cat Returns</option>
+              <option value="15">Howl’s Moving Castle</option>
+              <option value="16">Tales from Earthsea</option>
+              <option value="17">Ponyo</option>
+              <option value="18">The Secret World of Arrietty</option>
+              <option value="19">From Up on Poppy Hill</option>
+              <option value="20">The Tale of the Princess Kaguya</option>
+              <option value="21">The Wind Rises</option>
+              <option value="22">When Marnie Was There</option>
+              <option value="23">Earwig and the Witch</option>
+            </select>
+          </label>
+          <label for="reason">Why did you choose this film?<textarea id="reason" name="reason" rows="5" cols="51" placeholder="I loved the animation..." required></textarea>
+          </label>
+          Which Studio Ghibli director is your favourite?
+          <label for="Hayao Miyazaki"><input type="radio" id="Hayao Miyazaki" name="favourite-director" value="Hayao Miyazaki" checked> Hayao Miyazaki</label>
+          <label for="Isao Takahata"><input type="radio" id="Isao Takahata" name="favourite-director" value="Isao Takahata"> Isao Takahata</label>
+          <label for="Tomomi Mochizuki"><input type="radio" id="Tomomi Mochizuki" name="favourite-director" value="Tomomi Mochizuki"> Tomomi Mochizuki</label>
+          <label for="Yoshifumi Kondō"><input type="radio" id="Yoshifumi Kondō" name="favourite-director" value="Yoshifumi Kondō"> Yoshifumi Kondō</label>
+          <label for="Hiroyuki Morita"><input type="radio" id="Hiroyuki Morita" name="favourite-director" value="Hiroyuki Morita"> Hiroyuki Morita</label>
+          <label for="Gorō Miyazaki"><input type="radio" id="Gorō Miyazaki" name="favourite-director" value="Gorō Miyazaki"> Gorō Miyazaki</label>
+          <label for="Hiromasa Yonebayashi"><input type="radio" id="Hiromasa Yonebayashi" name="favourite-director" value="Hiromasa Yonebayashi"> Hiromasa Yonebayashi</label>
+          Last but not least, Yubaba, Zeniba or both? ;)
+          <label for="yubaba-zeniba"><input id="yubaba-zeniba" name="yubaba-zeniba" type="checkbox" value="yubaba" checked> Yubaba</label>
+          <label class="chk" for="yubaba-zeniba"><input id="yubaba-zeniba" name="yubaba-zeniba" type="checkbox" value="zeniba"> Zeniba</label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </body>
+</html>
